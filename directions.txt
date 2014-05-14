@@ -1,0 +1,13 @@
+Window.java is the file you want to run, if you would like to actually run the visualization.
+
+To run a different algorithm, just go into the main method and change the function its calling.
+Its pretty easy to see once you get there.
+
+Feel free to mess around with the internals.
+There are quite a few functins inside Rectangle.java and RectangleList.java that I figured I would need, and didn't.
+Someone else might find a way to make it better that way.
+
+Not everything was thought out ahead of time, so you might notice that some of the naming is done in a way that is not logically consistent with everything else.
+And is is not really commented out enough.
+
+Or in QuickSort, I just had it choose a pivot value randomly and you'll notice that it actually can be quite inefficient sometimes.
