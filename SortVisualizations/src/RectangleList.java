@@ -60,19 +60,17 @@ public class RectangleList {
 	
 		for(int i = 0; i < numberRectangles; i++){
 			Zen.setColor(data[i].getColor());
-			Zen.fillRect((int)(i*rectWidth), 0, (int)rectWidth, data[i].getValue());
+			Zen.fillRect((int)(i*rectWidth), Zen.getZenHeight()-data[i].getValue(), (int) rectWidth, data[i].getValue());
+			//Zen.fillRect((int)(i*rectWidth), 0, (int)rectWidth, data[i].getValue());
 		}
 	}
 	
 	
 	public void paint(Color color){
-		double rectWidth = (Zen.getZenWidth() / numberRectangles);
-		
 		for(int i = 0; i < numberRectangles; i++){
 			data[i].highlight(color);
-			Zen.setColor(data[i].getColor());
-			Zen.fillRect((int)(i*rectWidth), 0, (int)rectWidth, data[i].getValue());
 		}
+		this.paint();
 	}
 	
 	/**
