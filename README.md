@@ -5,3 +5,5 @@ runs Zen windows that run through a few sorting alogorithms discussed in CS 125 
 currently runs SelectionSort, QuickSort, and MergeSort
 
 For bored students.
+
+Protip: enter merge, select, quick to select the different sorts
