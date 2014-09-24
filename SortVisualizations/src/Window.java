@@ -17,11 +17,11 @@ public class Window {
 	}
 	
 	public static void QuickSort(){
-		int width = 1600;
-		int height = 900;
+		int width = 800;
+		int height = 400;
 		Zen.create(width, height, null);
 		
-		RectangleList myList = new RectangleList(1600, Color.white);
+		RectangleList myList = new RectangleList(800, Color.white);
 		
 		QuickSort.sort(myList);
 	}
@@ -40,7 +40,19 @@ public class Window {
 	}
 	
 	public static void main(String[] args){
-		MergeSort();
+        String arg = args[0].toLowerCase();
+        if(arg.equals("merge")){
+            MergeSort();
+        }
+        else if(arg.equals("quick")){
+            QuickSort();
+        }
+        else if(arg.equals("select")){
+            SelectionSort(); 
+        }
+        else{
+            System.out.println("Not Valid");
+        }
 	}
 	
 	
